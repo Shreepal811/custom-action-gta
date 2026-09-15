@@ -1,0 +1,19 @@
+name: Refactored workflow
+on:
+    workflow_dispatch:
+
+jobs:
+    build-push:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v7
+
+            - name: build and push image to docker
+              uses: ./build-test/action.yml
+
+              with:
+                DOCKERHUB_USERNAME: shreepalsing
+                DOCKERHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+                application_name: python-app
+
