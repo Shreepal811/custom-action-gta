@@ -10,7 +10,7 @@ jobs:
               uses: actions/checkout@v7
 
             - name: build and push image to docker
-              uses: ./build-test/action.yml
+              uses: ./build-test/
 
               with:
                 DOCKERHUB_USERNAME: shreepalsing
