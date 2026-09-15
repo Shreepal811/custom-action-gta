@@ -13,7 +13,7 @@ jobs:
               uses: ./build-test/
 
               with:
-                DOCKERHUB_USERNAME: shreepalsing
+                DOCKERHUB_USERNAME: shreepalsingh
                 DOCKERHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
                 application_name: python-app
 
