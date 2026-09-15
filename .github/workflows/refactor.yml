@@ -14,6 +14,6 @@ jobs:
 
               with:
                 DOCKERHUB_USERNAME: shreepalsingh
-                DOCKERHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+                DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN}}
                 application_name: python-app
 
