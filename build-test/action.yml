@@ -1,4 +1,4 @@
-name: custom action
+name: Composite custom action
 description: Custom action workflow for docker login and push
 inputs:
     DOCKERHUB_USERNAME:
